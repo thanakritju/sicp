@@ -1,0 +1,22 @@
+{
+  "name": "sicp",
+  "version": "1.0.0",
+  "description": "Solutions for scipjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanakritju/sicp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanakritju/sicp/issues"
+  },
+  "homepage": "https://github.com/thanakritju/sicp#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
