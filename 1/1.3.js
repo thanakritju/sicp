@@ -1,23 +1,14 @@
-function sum_of_largest_two(x, y, z) {
-  sum = 0;
-
-  if (x > y) {
-    sum += x * x;
-    if (y > z) {
-      sum += y * y;
-    } else {
-      sum += z * z;
-    }
-  } else {
-    sum += y * y;
-    if (z > x) {
-      sum += z * z;
-    } else {
-      sum += x * x;
-    }
+function sum_of_square_largest_two(x, y, z) {
+  function sum_of_square(a, b) {
+    return a * a + b * b;
   }
-
-  return sum;
+  return x > y
+    ? y > z
+      ? sum_of_square(x, y)
+      : sum_of_square(x, z)
+    : z > x
+    ? sum_of_square(z, y)
+    : sum_of_square(x, y);
 }
 
-exports.sum_of_largest_two = sum_of_largest_two;
+exports.sum_of_square_largest_two = sum_of_square_largest_two;

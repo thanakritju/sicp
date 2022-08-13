@@ -1,6 +1,6 @@
-const { sum_of_largest_two } = require("./1.3");
+const { sum_of_square_largest_two } = require("./1.3");
 
-test("sum_of_largest_two should return correct value", () => {
+test("sum_of_square_largest_two should return correct value", () => {
   [
     [1, 1, 1, 2],
     [1, 1, 2, 5],
@@ -9,7 +9,7 @@ test("sum_of_largest_two should return correct value", () => {
     [-8, -1, -4, 17],
     [0, 0, 0, 0],
   ].forEach(([x, y, z, expected]) => {
-    const ans = sum_of_largest_two(x, y, z);
+    const ans = sum_of_square_largest_two(x, y, z);
 
     expect(ans).toBe(expected);
   });
